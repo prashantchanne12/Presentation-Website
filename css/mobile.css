@@ -4,17 +4,17 @@
 
 
 .page h1{
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
 }
 
 .page p{
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     padding: 0;
 }
 
 
 .btn{
-    padding: 0.50rem 0.75rem !important;
-    margin-top: 0.25rem !important;
-    font-size: 0.75rem !important;
+    padding: 0.75rem 1rem !important;
+    margin-top: 0.75rem !important;
+    font-size: 1rem !important;
 }
