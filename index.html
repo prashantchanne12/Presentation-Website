@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Presentation</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.9.0-web/css/all.css">
+    <link rel="stylesheet" media="screen and (min-width:1100px)" href="./css/widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width:600px)" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- PAGE 1 (INTRO) -->
+
+    <section id="page-1" class="page">
+        <h1>Welcome to my Presentation</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, odio voluptate et aliquid nisi ducimus perferendis accusamus fugiat praesentium. Cumque ex amet voluptatibus. Odit quis nesciunt pariatur, numquam distinctio libero aliquid sequi labore maiores, reiciendis cumque blanditiis sed, voluptatem tempore.</p>
+        <div>
+            <a href="#page-2" class="btn">
+                Next Page <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+
+     <!-- PAGE 2 -->
+
+     <section id="page-2" class="page">
+        <h1>Page 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, odio voluptate et aliquid nisi ducimus perferendis accusamus fugiat praesentium. Cumque ex amet voluptatibus. Odit quis nesciunt pariatur, numquam distinctio libero aliquid sequi labore maiores, reiciendis cumque blanditiis sed, voluptatem tempore.</p>
+        <div>
+            <a href="#page-1" class="btn btn-dark">
+                Previous Page <i class="fas fa-arrow-up"></i>
+            </a>
+            <a href="#page-3" class="btn">
+                Next Page <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+   
+    <!-- PAGE 3 -->
+
+     <section id="page-3" class="page">
+        <h1>Page 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, odio voluptate et aliquid nisi ducimus perferendis accusamus fugiat praesentium. Cumque ex amet voluptatibus. Odit quis nesciunt pariatur, numquam distinctio libero aliquid sequi labore maiores, reiciendis cumque blanditiis sed, voluptatem tempore.</p>
+        <div>
+            <a href="#page-2" class="btn btn-dark">
+                Previous Page <i class="fas fa-arrow-up"></i>
+            </a>
+            <a href="#page-4" class="btn">
+                Next Page <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+
+        <!-- PAGE 4 -->
+
+     <section id="page-4" class="page">
+        <h1>Page 4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, odio voluptate et aliquid nisi ducimus perferendis accusamus fugiat praesentium. Cumque ex amet voluptatibus. Odit quis nesciunt pariatur, numquam distinctio libero aliquid sequi labore maiores, reiciendis cumque blanditiis sed, voluptatem tempore.</p>
+        <div>
+            <a href="#page-3" class="btn btn-dark">
+                Previous Page <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </section>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <script>
+    // Smooth Scrolling
+
+      $('.btn').on('click', function(event){
+
+        if(this.hash !== ''){
+            event.preventDefault();
+
+            const hash = this.hash;
+
+            $('html,body').animate(
+                {
+                scrollTop: $(hash).offset().top
+                },
+            800 );
+        }
+
+      }); 
+
+    </script>
+
+</body>
+</html>
